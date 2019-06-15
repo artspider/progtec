@@ -11,7 +11,8 @@ class Programmer extends Model
 
     public static $rules = [
         "name" => "required",
-        "email" => "unique:programmers",
+        "username" => "required",
+        "email" => "required|email|unique:programmers",
     ];
 
     public function projects()
