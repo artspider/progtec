@@ -7,6 +7,10 @@ use App\Programmer;
  * Routes for resource programmers
  */
 
+ $router->get('/', function () use ($router) {
+     return 'hola';
+ });
+
 
 $router->group(['prefix' => 'api', 'middleware' => 'auth'], function () use ($router) {
     //$router->group(['prefix' => 'api'], function () use ($router) {
