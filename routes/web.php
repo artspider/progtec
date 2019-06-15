@@ -11,6 +11,10 @@ use App\Programmer;
      return 'hola';
  });
 
+ $router->get('/key', function() {
+    return str_random(32);
+});
+
 
 $router->group(['prefix' => 'api', 'middleware' => 'auth'], function () use ($router) {
     //$router->group(['prefix' => 'api'], function () use ($router) {
