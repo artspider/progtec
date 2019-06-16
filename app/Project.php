@@ -11,7 +11,6 @@ class Project extends Model {
     public static $rules = [
         // Validation rules
         "name" => "required",
-        "project_id" => "required|numeric",
     ];
 
     // Relationships
