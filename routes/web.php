@@ -26,4 +26,7 @@ $router->group(['prefix' => 'api', 'middleware' => 'auth'], function () use ($ro
 
     $router->get('projects', 'ProjectsController@all');
     $router->get('projects/{id}', 'ProjectsController@get');
+    $router->post('projects', 'ProjectsController@add');
+    $router->put('projects/{id}', 'ProjectsController@put');
+    $router->delete('projects/{id}', 'ProjectsController@remove');
 });
