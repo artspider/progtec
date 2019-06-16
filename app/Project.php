@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model {
 
-    protected $fillable = [];
+    protected $fillable = ["name","programmer_id"];
 
     protected $dates = [];
 
